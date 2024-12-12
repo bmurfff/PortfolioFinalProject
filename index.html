@@ -1,37 +1,174 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <!-- About Me Section -->
-  <section id="about-me">
-    <h2>About Me</h2>
-    <img src="images/profile.jpg" alt="A professional picture of me" width="200">
-    <p>I’m a proud Baltimore native and graduate of Mt. Saint Joseph High School, currently pursuing my studies at James Madison University...</p>
-  </section>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <img src="images/project1.png" alt="Screenshot of Project 1" width="400">
-      <p>Project 1: Description of the project...</p>
-    </div>
-    <div class="project">
-      <img src="images/project2.png" alt="Screenshot of Project 2" width="400">
-      <p>Project 2: Description of the project...</p>
-    </div>
-  </section>
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
-  <!-- Hobbies Section -->
-  <section id="hobbies">
-    <h2>Hobbies</h2>
-    <img src="images/hobbies.jpg" alt="Picture of me at a Ravens game" width="400">
-    <p>I enjoy staying active, supporting the Ravens and Orioles, and spending time with friends and family...</p>
-  </section>
-</body>
-</html>
+h1, h2, h3 {
+    color: purple;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background-color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+.hero a {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero a:hover {
+    background-color: gold;
+    color: purple;
+}
+
+/* About Section */
+.about {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Projects Section */
+.projects {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: white;
+}
+
+.projects h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.project-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    max-width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-item h3 {
+    color: purple;
+    margin-bottom: 0.5rem;
+}
+
+.project-item p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Contact Section */
+.contact {
+    padding: 3rem 1rem;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact form button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: purple;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: gold;
+    color: purple;
+}
