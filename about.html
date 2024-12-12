@@ -23,14 +23,14 @@
             text-decoration: underline; /* Underline links on hover */
         }
         .carousel-inner {
-            height: 400px; /* Fixed carousel height */
+            height: 300px; /* Fixed carousel height */
         }
         .carousel img {
-            height: auto; /* Maintain aspect ratio */
-            max-height: 400px; /* Limit height to fit the carousel */
+            max-width: 90%; /* Limit image width to prevent oversized images */
+            max-height: 300px; /* Ensure all images fit within the carousel */
             margin: auto; /* Center images horizontally */
-            margin-left: 96px; /* Move images to the right by 1 inch */
-            object-fit: contain; /* Ensure full image visibility without cropping */
+            display: block; /* Ensure proper block layout for centering */
+            object-fit: contain; /* Preserve aspect ratio and show the full image */
         }
         .carousel-item {
             display: flex; /* Use flexbox for vertical alignment */
@@ -110,7 +110,7 @@
     <!-- Footer -->
     <footer class="footer py-3 text-center">
         <div class="container">
-            <p>&copy; 2024 Murphy Media. All rights reserved.</p>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
         </div>
     </footer>
 
