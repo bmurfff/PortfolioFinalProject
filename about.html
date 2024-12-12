@@ -23,16 +23,13 @@
             text-decoration: underline; /* Underline links on hover */
         }
         .carousel-inner {
-            height: 400px; /* Set a fixed height for the carousel */
+            height: 400px; /* Fixed carousel height */
         }
         .carousel img {
-            max-width: 100%; /* Scale image width dynamically */
-            max-height: 400px; /* Restrict height to fit the carousel */
+            height: 400px; /* Set all images to a fixed height */
+            width: auto; /* Maintain aspect ratio */
             margin: auto; /* Center images horizontally */
-            object-fit: contain; /* Maintain aspect ratio, display full image */
-        }
-        .carousel-item {
-            text-align: center; /* Center images within the carousel */
+            object-fit: contain; /* Ensure full image visibility */
         }
     </style>
 </head>
@@ -108,7 +105,7 @@
     <!-- Footer -->
     <footer class="footer py-3 text-center">
         <div class="container">
-            <p>&copy; 2024 Murphy Media. All rights reserved.</p>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
         </div>
     </footer>
 
