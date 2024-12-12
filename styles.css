@@ -1,53 +1,129 @@
-/* General body styles */
+/* Global Styles */
 body {
     background-color: #ffffff; /* White background */
     color: #6f42c1; /* Purple text */
+    border-left: 2px solid #6f42c1; /* Thin purple border on the left */
+    border-right: 2px solid #6f42c1; /* Thin purple border on the right */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Default font */
 }
 
-/* Navbar styles */
+/* Navigation Bar */
 .navbar {
     background-color: #f5f5dc; /* Light tan background for navbar */
     border-radius: 10px; /* Rounded edges */
-}
-
-.navbar-brand {
-    font-family: 'Pacifico', cursive; /* Apply Pacifico font to the brand text */
-    color: #6f42c1; /* Purple text */
+    margin: 0 10px; /* Add margin to align with borders */
+    padding: 10px; /* Inner padding */
 }
 
 .navbar a {
-    color: #6f42c1; /* Purple text for navbar links */
+    color: #6f42c1; /* Purple text for links */
+    font-weight: bold; /* Bold links */
+    text-decoration: none; /* Remove underline */
 }
 
 .navbar a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    text-decoration: underline; /* Underline on hover */
 }
 
-/* Footer styles */
-.footer p {
-    color: #6f42c1; /* Purple text for footer */
+.navbar-brand {
+    font-family: 'Pacifico', cursive; /* Apply Pacifico font */
+    color: #6f42c1; /* Purple text for brand */
+    font-size: 1.5rem; /* Slightly larger size */
 }
 
-/* Card and button styles */
+/* Footer */
+.footer {
+    background-color: #f5f5dc; /* Light tan background */
+    color: #6f42c1; /* Purple text */
+    border-top: 2px solid #6f42c1; /* Top border for footer */
+    padding: 10px 0; /* Space above and below footer text */
+    text-align: center; /* Center text */
+}
+
+/* Main Heading and Sections */
+h1, h2, h3 {
+    color: #6f42c1; /* Purple text */
+    text-align: center; /* Center headings */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger font size for main headings */
+    margin-top: 20px; /* Add space above headings */
+    margin-bottom: 20px; /* Add space below headings */
+}
+
+p {
+    font-size: 1rem; /* Standard font size for paragraphs */
+    line-height: 1.6; /* Improve readability */
+    margin: 10px 0; /* Add spacing between paragraphs */
+}
+
+/* Cards for Projects */
+.card {
+    border: 2px solid #6f42c1; /* Purple border for cards */
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
 .card-title {
-    color: #6f42c1; /* Purple text for card titles */
+    color: #6f42c1; /* Purple for card titles */
+    font-weight: bold; /* Bold titles */
+    font-size: 1.25rem; /* Slightly larger font size */
 }
 
 .btn-primary {
     background-color: #6f42c1; /* Purple button background */
-    border-color: #6f42c1;
+    border-color: #6f42c1; /* Purple border */
 }
 
 .btn-primary:hover {
     background-color: #5a379c; /* Darker purple on hover */
-    border-color: #5a379c;
+    border-color: #5a379c; /* Darker border */
 }
 
-body {
-    border-left: 2px solid #6f42c1; /* Purple border on the left */
-    border-right: 2px solid #6f42c1; /* Purple border on the right */
-    padding-left: 10px; /* Add some space inside the left border */
-    padding-right: 10px; /* Add some space inside the right border */
-    background-color: #ffffff; /* Keep the white background for consistency */
+/* Carousel */
+.carousel-inner {
+    height: 400px; /* Set consistent height */
+    overflow: hidden; /* Prevent image overflow */
 }
 
+.carousel-item img {
+    max-width: 90%; /* Restrict image width */
+    max-height: 400px; /* Restrict image height */
+    margin: auto; /* Center images horizontally */
+    display: block; /* Ensure block layout for proper alignment */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Form Styling (Contact Page) */
+.form-control, .btn-primary {
+    border-color: #6f42c1; /* Purple borders for inputs and buttons */
+}
+
+.form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+.btn-primary {
+    font-size: 1.1rem; /* Slightly larger button text */
+    padding: 10px 20px; /* Add padding for buttons */
+}
+
+/* Margins and Padding for Sections */
+.container {
+    margin: 0 auto; /* Center content */
+    padding: 0 15px; /* Add padding to avoid text touching borders */
+}
+
+.row {
+    margin-bottom: 30px; /* Space between rows */
+}
+
+/* Additional Styles */
+hr {
+    border: 0;
+    border-top: 2px solid #6f42c1; /* Purple horizontal line */
+    margin: 20px 0; /* Space above and below lines */
+}
