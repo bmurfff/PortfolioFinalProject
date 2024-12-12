@@ -60,12 +60,19 @@ p {
     margin: 10px 0; /* Add spacing between paragraphs */
 }
 
+
+
+
+
+
 /* Cards for Projects */
 .card {
     border: 2px solid #6f42c1;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .card img {
@@ -76,11 +83,12 @@ p {
 }
 
 .card-body {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    padding: 10px;
 }
 
 .card-title {
@@ -88,12 +96,15 @@ p {
     font-weight: bold;
     font-size: 1.25rem;
     text-align: center;
+    margin-bottom: auto; /* Ensures spacing before the button */
 }
 
 .card .btn-primary {
     background-color: #6f42c1;
     border-color: #6f42c1;
-    margin-top: auto;
+    align-self: stretch;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .card .btn-primary:hover {
