@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Your Name">
-    <meta name="description" content="References - Personal Portfolio">
-    <title>References</title>
+    <meta name="description" content="Contact Me - Personal Portfolio">
+    <title>Contact Me</title>
     <!-- Google Font: Pacifico -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
@@ -15,8 +15,9 @@
             background-color: #ffffff; /* White background */
             color: #6f42c1; /* Purple text */
         }
-        .navbar, .footer {
-            background-color: #ffffff; /* White background for navbar and footer */
+        .navbar {
+            background-color: #f5f5dc; /* Light tan background for navbar */
+            border-radius: 10px; /* Rounded edges */
         }
         .navbar a, .footer p {
             color: #6f42c1; /* Purple text */
@@ -28,19 +29,14 @@
             font-family: 'Pacifico', cursive; /* Apply Pacifico font to the brand text */
             color: #6f42c1; /* Purple text */
         }
-        blockquote {
-            border-left: 5px solid #6f42c1; /* Purple border for blockquote */
-            padding-left: 15px;
-            font-style: italic;
-            color: #6f42c1;
-            position: relative;
+        .form-control, .btn-primary {
+            border-color: #6f42c1; /* Purple borders for inputs and buttons */
         }
-        .blockquote-footer {
-            font-size: 0.9em;
-            font-style: normal;
-            color: #6f42c1;
-            margin-left: 10px; /* Space between text and footer */
-            display: inline-block; /* Keep it inline with the text */
+        .btn-primary {
+            background-color: #6f42c1; /* Purple button background */
+        }
+        .btn-primary:hover {
+            background-color: #5a379c; /* Darker purple on hover */
         }
     </style>
 </head>
@@ -54,11 +50,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: #6f42c1;">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html" style="color: #6f42c1;">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html" style="color: #6f42c1;">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="references.html" style="color: #6f42c1;">References</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html" style="color: #6f42c1;">Contact Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Me</a></li>
                 </ul>
             </div>
         </div>
@@ -67,27 +63,27 @@
     <!-- Main Content -->
     <main class="py-5">
         <div class="container">
-            <h1 class="text-center">References</h1>
-            <p class="lead text-center">See what others have to say about my work.</p>
+            <h1 class="text-center">Contact Me</h1>
+            <p class="lead text-center">I'd love to hear from you! Please fill out the form below to get in touch.</p>
             <div class="row justify-content-center">
                 <div class="col-md-8">
-                    <!-- Reference 1 -->
-                    <blockquote>
-                        "Working with Braeden was an absolute pleasure. Their attention to detail and commitment to excellence were evident in every aspect of the project." 
-                        <span class="blockquote-footer">— Joe Flacco, CEO of Elite Football</span>
-                    </blockquote>
-                    <hr>
-                    <!-- Reference 2 -->
-                    <blockquote>
-                        "Braeden demonstrated exceptional skills and professionalism throughout our collaboration. I highly recommend them for any challenging project." 
-                        <span class="blockquote-footer">— Ray Lewis, The Best Middle Linebacker in NFL History</span>
-                    </blockquote>
-                    <hr>
-                    <!-- Reference 3 -->
-                    <blockquote>
-                        "I was truly impressed with the quality of work and the innovative approach Braeden brought to our team. A real asset to any organization." 
-                        <span class="blockquote-footer">— Wayne Gretzky, 'The Great One'</span>
-                    </blockquote>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
