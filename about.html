@@ -23,18 +23,16 @@
             text-decoration: underline; /* Underline links on hover */
         }
         .carousel-inner {
-            height: 500px; /* Increase height for better visibility */
+            height: 400px; /* Set a fixed height for carousel */
         }
         .carousel img {
-            max-width: 100%; /* Make images responsive to container width */
-            max-height: 500px; /* Limit height to fit the carousel */
+            max-height: 100%; /* Image height will not exceed container */
             width: auto; /* Maintain aspect ratio */
-            height: auto; /* Maintain aspect ratio */
-            margin: auto; /* Center the image horizontally */
-            object-fit: contain; /* Ensure the entire image is visible without cropping */
+            margin: auto; /* Center images horizontally */
+            object-fit: contain; /* Ensure full image is visible */
         }
         .carousel-item {
-            padding-bottom: 20px; /* Add space below each image */
+            text-align: center; /* Center images in each carousel item */
         }
     </style>
 </head>
@@ -84,13 +82,13 @@
                                 <img src="images/volunteer.jpg" alt="Volunteer Work">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/flags.jpg" alt="Orioles Game">
+                                <img src="images/flags.jpg" alt="Flags">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/tailgate.jpg" alt="Big Tree">
+                                <img src="images/tailgate.jpg" alt="Tailgate">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/BigTree.jpg" alt="Salisbury">
+                                <img src="images/BigTree.jpg" alt="Big Tree">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
@@ -118,3 +116,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
