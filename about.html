@@ -40,8 +40,9 @@
         }
         /* Specific style for Big Tree image */
         .carousel-item img.big-tree {
-            object-fit: cover; /* Allow zooming out while covering available space */
-            max-height: 300px; /* Restrict height to prevent oversized image */
+            object-fit: contain; /* Zoom out further */
+            max-height: 200px; /* Reduce height for more zoom-out effect */
+            width: auto; /* Maintain aspect ratio */
         }
     </style>
 </head>
