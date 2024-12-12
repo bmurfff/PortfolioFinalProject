@@ -20,18 +20,24 @@
             color: #6f42c1; /* Purple text */
         }
         .navbar a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Underline links on hover */
         }
         /* Carousel Styles */
         .carousel-inner {
-            max-height: 400px; /* Set consistent height for the carousel */
-            overflow: hidden; /* Prevent images from overflowing */
+            height: 400px; /* Set consistent height for the carousel */
+            overflow: hidden; /* Prevent image overflow */
         }
         .carousel-item img {
-            max-width: 100%; /* Scale images to fit the width */
-            max-height: 400px; /* Restrict height */
-            object-fit: contain; /* Ensure the full image is visible */
+            max-width: 90%; /* Restrict image width */
+            max-height: 400px; /* Restrict image height */
             margin: auto; /* Center images horizontally */
+            display: block; /* Ensure block layout for proper alignment */
+            object-fit: contain; /* Maintain aspect ratio and fit inside the container */
+        }
+        /* Specific style for Big Tree image */
+        .carousel-item img.big-tree {
+            object-fit: contain; /* Ensure full image visibility */
+            max-height: 350px; /* Slightly smaller height to fit within carousel */
         }
     </style>
 </head>
@@ -84,9 +90,9 @@
                             <div class="carousel-item">
                                 <img src="images/tailgate.jpg" alt="Tailgate">
                             </div>
-                            <!-- Fourth Slide: Big Tree -->
+                            <!-- Fourth Slide: Big Tree with Adjusted Size -->
                             <div class="carousel-item">
-                                <img src="images/BigTree.jpg" alt="Big Tree">
+                                <img src="images/BigTree.jpg" alt="Big Tree" class="big-tree">
                             </div>
                         </div>
                         <!-- Carousel Controls -->
@@ -107,7 +113,7 @@
     <!-- Footer -->
     <footer class="footer py-3 text-center">
         <div class="container">
-            <p>&copy; 2024 Murphy Media. All rights reserved.</p>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
         </div>
     </footer>
 
