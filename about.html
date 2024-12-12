@@ -23,16 +23,16 @@
             text-decoration: underline; /* Underline links on hover */
         }
         .carousel-inner {
-            height: 400px; /* Set a fixed height for carousel */
+            height: 400px; /* Set a fixed height for the carousel */
         }
         .carousel img {
-            max-height: 100%; /* Image height will not exceed container */
-            width: auto; /* Maintain aspect ratio */
+            max-width: 100%; /* Scale image width dynamically */
+            max-height: 400px; /* Restrict height to fit the carousel */
             margin: auto; /* Center images horizontally */
-            object-fit: contain; /* Ensure full image is visible */
+            object-fit: contain; /* Maintain aspect ratio, display full image */
         }
         .carousel-item {
-            text-align: center; /* Center images in each carousel item */
+            text-align: center; /* Center images within the carousel */
         }
     </style>
 </head>
@@ -116,4 +116,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
