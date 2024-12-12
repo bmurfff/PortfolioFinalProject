@@ -26,10 +26,15 @@
             height: 400px; /* Fixed carousel height */
         }
         .carousel img {
-            height: 400px; /* Set all images to a fixed height */
-            width: auto; /* Maintain aspect ratio */
+            height: auto; /* Maintain aspect ratio */
+            max-height: 400px; /* Limit height to fit the carousel */
             margin: auto; /* Center images horizontally */
-            object-fit: contain; /* Ensure full image visibility */
+            object-fit: contain; /* Ensure full image visibility without cropping */
+        }
+        .carousel-item {
+            display: flex; /* Use flexbox for vertical alignment */
+            align-items: center; /* Center vertically */
+            justify-content: center; /* Center horizontally */
         }
     </style>
 </head>
@@ -57,7 +62,6 @@
     <main class="py-5">
         <div class="container">
             <h1 class="text-center">About Me</h1>
-            <p class="lead text-center">A little bit about myself...</p>
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <p>
