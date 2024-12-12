@@ -22,12 +22,16 @@
         .navbar a:hover {
             text-decoration: underline; /* Underline links on hover */
         }
+        .carousel-inner {
+            height: 400px; /* Set a fixed height for the carousel */
+        }
         .carousel img {
-            max-width: 100%; /* Ensure images don't exceed container width */
-            max-height: 500px; /* Limit height for larger images */
-            width: auto; /* Adjust width proportionally */
-            height: auto; /* Adjust height proportionally */
-            margin: 0 auto; /* Center the image within the carousel */
+            height: 100%; /* Force image to fit the height of the carousel */
+            width: auto; /* Maintain aspect ratio */
+            max-width: 100%; /* Prevent image overflow */
+            display: block;
+            margin: auto; /* Center the image horizontally */
+            object-fit: contain; /* Ensure the whole image is visible */
         }
     </style>
 </head>
@@ -74,16 +78,16 @@
                     <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="images/volunteer.jpg" class="d-block" alt="Volunteer Work">
+                                <img src="images/volunteer.jpg" alt="Volunteer Work">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/orioles.jpg" class="d-block" alt="Orioles Game">
+                                <img src="images/orioles.jpg" alt="Orioles Game">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/BigTree.jpg" class="d-block" alt="Big Tree">
+                                <img src="images/BigTree.jpg" alt="Big Tree">
                             </div>
                             <div class="carousel-item">
-                                <img src="images/salisbury.jpg" class="d-block" alt="Salisbury">
+                                <img src="images/salisbury.jpg" alt="Salisbury">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
