@@ -1,174 +1,115 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Home - Personal Portfolio">
+    <title>Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ffffff; /* White background */
+            color: #6f42c1; /* Purple text */
+        }
+        .navbar, .footer {
+            background-color: #ffffff; /* White navbar and footer */
+        }
+        .navbar a, .footer p {
+            color: #6f42c1; /* Purple text for navbar links and footer text */
+        }
+        .navbar a:hover {
+            text-decoration: underline; /* Underline links on hover */
+        }
+        .card-title {
+            color: #6f42c1; /* Purple title for project cards */
+        }
+        .btn-primary {
+            background-color: #6f42c1; /* Purple button background */
+            border-color: #6f42c1;
+        }
+        .btn-primary:hover {
+            background-color: #5a379c; /* Darker purple on hover */
+            border-color: #5a379c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" style="color: #6f42c1;">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="references.html">References</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem;
-}
+    <!-- Main Content -->
+    <main class="py-5">
+        <div class="container">
+            <h1 class="text-center">Welcome to My Portfolio</h1>
+            <p class="lead text-center">
+                Explore my work, learn more about me, and get in touch!
+            </p>
 
-h1, h2, h3 {
-    color: purple;
-}
+            <!-- Featured Projects -->
+            <div class="row mt-4">
+                <!-- Project 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">A brief description of Project 1. Explore this project for more details.</p>
+                            <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text">A brief description of Project 2. Explore this project for more details.</p>
+                            <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="images/project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text">A brief description of Project 3. Explore this project for more details.</p>
+                            <a href="projects.html" class="btn btn-primary">View Projects</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-p {
-    line-height: 1.6;
-}
+    <!-- Footer -->
+    <footer class="footer py-3 text-center">
+        <div class="container">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
 
-/* Hero Section */
-.hero {
-    background-color: white;
-    text-align: center;
-    padding: 5rem 1rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #555;
-}
-
-.hero a {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: purple;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.hero a:hover {
-    background-color: gold;
-    color: purple;
-}
-
-/* About Section */
-.about {
-    padding: 3rem 1rem;
-    text-align: center;
-    background-color: #f8f9fa;
-}
-
-.about h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.about p {
-    max-width: 800px;
-    margin: 0 auto;
-    color: #555;
-}
-
-/* Projects Section */
-.projects {
-    padding: 3rem 1rem;
-    text-align: center;
-    background-color: white;
-}
-
-.projects h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.project-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.project-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1.5rem;
-    max-width: 300px;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.project-item h3 {
-    color: purple;
-    margin-bottom: 0.5rem;
-}
-
-.project-item p {
-    color: #555;
-    font-size: 0.9rem;
-}
-
-/* Contact Section */
-.contact {
-    padding: 3rem 1rem;
-    text-align: center;
-    background-color: #f8f9fa;
-}
-
-.contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.contact form .form-group {
-    margin-bottom: 1.5rem;
-}
-
-.contact form label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #555;
-}
-
-.contact form input,
-.contact form textarea {
-    width: 100%;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact form button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: purple;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.contact form button:hover {
-    background-color: gold;
-    color: purple;
-}
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
