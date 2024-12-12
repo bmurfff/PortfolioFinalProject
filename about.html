@@ -23,15 +23,15 @@
             text-decoration: underline; /* Underline links on hover */
         }
         .carousel-inner {
-            height: 400px; /* Set a fixed height for the carousel */
+            height: 300px; /* Set a smaller height for the carousel */
         }
         .carousel img {
-            height: 100%; /* Force image to fit the height of the carousel */
+            max-width: 80%; /* Restrict the width to 80% of the container */
+            max-height: 300px; /* Restrict the height to match the carousel */
             width: auto; /* Maintain aspect ratio */
-            max-width: 100%; /* Prevent image overflow */
-            display: block;
+            height: auto; /* Maintain aspect ratio */
             margin: auto; /* Center the image horizontally */
-            object-fit: contain; /* Ensure the whole image is visible */
+            object-fit: contain; /* Ensure the entire image is visible */
         }
     </style>
 </head>
