@@ -62,26 +62,48 @@ p {
 
 /* Cards for Projects */
 .card {
-    border: 2px solid #6f42c1; /* Purple border for cards */
-    border-radius: 10px; /* Rounded corners for cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 2px solid #6f42c1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 2px solid #6f42c1;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 .card-title {
-    color: #6f42c1; /* Purple for card titles */
-    font-weight: bold; /* Bold titles */
-    font-size: 1.25rem; /* Slightly larger font size */
+    color: #6f42c1;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
 }
 
-.btn-primary {
-    background-color: #6f42c1; /* Purple button background */
-    border-color: #6f42c1; /* Purple border */
+.card .btn-primary {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+    margin-top: auto;
 }
 
-.btn-primary:hover {
-    background-color: #5a379c; /* Darker purple on hover */
-    border-color: #5a379c; /* Darker border */
+.card .btn-primary:hover {
+    background-color: #5a379c;
+    border-color: #5a379c;
 }
+
+
+
+
 
 /* Carousel */
 .carousel-inner {
