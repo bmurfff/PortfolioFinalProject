@@ -24,12 +24,13 @@
         }
         .carousel-inner {
             height: 300px; /* Fixed carousel height */
+            overflow: hidden; /* Prevent images from overflowing */
         }
         .carousel img {
             max-width: 90%; /* Limit image width to prevent oversized images */
             max-height: 300px; /* Ensure all images fit within the carousel */
             margin: auto; /* Center images horizontally */
-            display: block; /* Ensure proper block layout for centering */
+            display: block; /* Proper block layout for images */
             object-fit: contain; /* Preserve aspect ratio and show the full image */
         }
         .carousel-item {
@@ -110,7 +111,7 @@
     <!-- Footer -->
     <footer class="footer py-3 text-center">
         <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
+            <p>&copy; 2024 Murphy Media. All rights reserved.</p>
         </div>
     </footer>
 
