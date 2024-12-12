@@ -27,12 +27,14 @@
             padding-left: 15px;
             font-style: italic;
             color: #6f42c1;
+            position: relative;
         }
         .blockquote-footer {
-            display: inline; /* Inline name and occupation */
             font-size: 0.9em;
-            color: #6f42c1; /* Match overall text color */
             font-style: normal;
+            color: #6f42c1;
+            margin-left: 10px; /* Space between text and footer */
+            display: inline-block; /* Keep it inline with the text */
         }
     </style>
 </head>
@@ -66,19 +68,19 @@
                     <!-- Reference 1 -->
                     <blockquote>
                         "Working with [Your Name] was an absolute pleasure. Their attention to detail and commitment to excellence were evident in every aspect of the project." 
-                        <span class="blockquote-footer">Jane Doe, CEO of Tech Company</span>
+                        <span class="blockquote-footer">— Jane Doe, CEO of Tech Company</span>
                     </blockquote>
                     <hr>
                     <!-- Reference 2 -->
                     <blockquote>
                         "[Your Name] demonstrated exceptional skills and professionalism throughout our collaboration. I highly recommend them for any challenging project." 
-                        <span class="blockquote-footer">John Smith, Manager at Creative Agency</span>
+                        <span class="blockquote-footer">— John Smith, Manager at Creative Agency</span>
                     </blockquote>
                     <hr>
                     <!-- Reference 3 -->
                     <blockquote>
                         "I was truly impressed with the quality of work and the innovative approach [Your Name] brought to our team. A real asset to any organization." 
-                        <span class="blockquote-footer">Sarah Lee, Project Lead at Development Firm</span>
+                        <span class="blockquote-footer">— Sarah Lee, Project Lead at Development Firm</span>
                     </blockquote>
                 </div>
             </div>
@@ -96,6 +98,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
 
 
