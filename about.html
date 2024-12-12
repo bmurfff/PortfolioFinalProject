@@ -23,17 +23,25 @@
             text-decoration: underline;
         }
         /* Carousel Styles */
+        .carousel-inner {
+            max-height: 400px; /* Set a maximum height for the carousel */
+            overflow: hidden; /* Prevent images from overflowing */
+        }
         .carousel-item img {
-            width: 100%;
+            max-width: 100%;
             height: auto;
             object-fit: contain;
         }
         .carousel-item {
             text-align: center;
+            display: flex; /* Centering */
+            align-items: center; /* Vertically center */
+            justify-content: center; /* Horizontally center */
         }
-        /* Optional: Adjust carousel height */
-        .carousel-inner {
-            max-height: 500px; /* Adjust as needed */
+        /* Specific style for Big Tree image */
+        .carousel-item img.big-tree {
+            object-fit: cover; /* Allow zooming out while covering available space */
+            max-height: 300px; /* Restrict height to prevent oversized image */
         }
     </style>
 </head>
@@ -67,7 +75,6 @@
                     <p>
                         I’m a proud Baltimore native and graduate of Mt. Saint Joseph High School, currently pursuing my studies at James Madison University in Harrisonburg, VA. As a SMAD major with a concentration in Interactive Design, I’m passionate about crafting engaging and user-friendly digital experiences...
                     </p>
-                    <!-- Add other paragraphs as needed -->
                 </div>
             </div>
 
@@ -88,9 +95,9 @@
                             <div class="carousel-item">
                                 <img src="images/tailgate.jpg" alt="Tailgate">
                             </div>
-                            <!-- Fourth Slide -->
+                            <!-- Fourth Slide: Big Tree with Zoom Out -->
                             <div class="carousel-item">
-                                <img src="images/BigTree.jpg" alt="Big Tree">
+                                <img src="images/BigTree.jpg" alt="Big Tree" class="big-tree">
                             </div>
                         </div>
                         <!-- Carousel Controls -->
@@ -111,7 +118,7 @@
     <!-- Footer -->
     <footer class="footer py-3 text-center">
         <div class="container">
-            <p>&copy; 2024 Murphy Media. All rights reserved.</p>
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
         </div>
     </footer>
 
