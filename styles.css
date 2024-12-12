@@ -2,8 +2,8 @@
 body {
     background-color: #ffffff; /* White background */
     color: #6f42c1; /* Purple text */
-    border-left: 10px solid #6f42c1; /
-    border-right: 10px solid #6f42c1; /
+    border-left: 20px solid #6f42c1; /
+    border-right: 20px solid #6f42c1; /
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
     font-family: Arial, sans-serif; /* Default font */
